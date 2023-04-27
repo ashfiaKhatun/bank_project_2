@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>banking</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bank_project.css">
+    
+</head>
+<body>
+
+    <h1 class="text-center text-primary fw-bold mb-3">Jonotar Bank</h1>
+
+    <section id="submitArea">
+
+        <div class="login">
+
+            <h3 class="text-success fw-bold mb-3">Log in</h3>
+
+            <input type="text" placeholder="account name" class="form-control" id="name"><br>
+            <input type="password" placeholder="PIN" class="form-control" id="pass"><br>
+            <button class="btn btn-success" id="login">Log in</button>
+
+        </div>
+
+    </section>
+
+    <section id="transArea">
+
+        <h3 class="text-success text-center fw-bold mb-4">Transaction Area</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="taka">
+                    <h3>Deposit</h3>
+                    <h3><span id="joma">00</span></h3>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="taka">
+                    <h3>Withdraw</h3>
+                    <h3><span id="tola">00</span></h3>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="taka">
+                    <h3>Balance</h3>
+                    <h3><span id="mot">00</span></h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hishab">
+                    <h3>Deposit</h3>
+                    <input type="text" placeholder="$ amount you want to deposit" class="form-control" id="deposit">
+                    <button class="btn btn-success mt-3" id="depBtn">Deposit</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="hishab">
+                    <h3>Withdraw</h3>
+                    <input type="text" placeholder="$ amount you want to withdraw" class="form-control" id="withdraw">
+                    <button class="btn btn-success mt-3" id="withBtn">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+
+
+    <script src="bank_project.js"></script>
+
+</body>
+</html>
